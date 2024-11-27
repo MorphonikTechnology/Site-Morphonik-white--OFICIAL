@@ -1,0 +1,1484 @@
+ /*Aplicando Responsividade em um arquivo separado */
+ 
+ 
+ /*Aplicando responsividade para telas maiores - tela dos computadores da escola*/
+@media (min-width: 1920px) {
+    .navbar-icons {
+        margin-right: 75px; /* Ajuste para maior espaçamento */
+    }
+    
+    .navbar-links {
+        margin-right: 650px; /* Ajuste para maior espaçamento */
+    }
+
+    .navbar-logo img {
+        height:500px; /*definindo o tamanho - deixando maior*/
+        width:900px; /*definindo o tamanho - deixando maior*/
+    }
+
+    .navbar-fundo1 img {
+        height:1250px; /* Ajustei o valor para um tamanho maior */
+        width: 1530px;  /* Ajustei o valor para um tamanho maior */
+        margin-top:-38px; /*37 fica um uma linha bem pequena (espaçamento)*/
+    }
+
+    .navbar-fundo1 .logocompleta {
+        position: absolute;
+        top: 55%; /*em relação ao topo*/
+        left: 50%;  /*porcentagem da esquerda - utilizar outros tipos*/
+        transform: translate(-50%, -50%);
+        height:400px; /*definindo o tamanho*/
+        width:800px; /*definindo o tamanho*/
+    }
+
+    .quem, .somos {
+        width: 40%;
+    }
+
+    .conteudo p {
+        margin-right: 0;  
+    }
+}
+/* end of responsive line **/
+
+/* Responsividade telas um pouco menores - computador(laura) */
+@media (max-width: 1366px) {
+    .navbar-fundo1 img{
+        width: 200%;
+    }
+
+    .navbar-links {
+        margin-right: 0; /* Ajustar para telas menores */
+    }
+
+    .navbar-icons .icon img{
+        height: 40px;
+        width: 40px;
+        margin-right: 40px;
+        margin-left: -40px;
+    }
+    
+    .navbar-fundo1 img {
+        height:800px; /* Ajustei o valor para um tamanho maior */
+        width: 1000px;  /* Ajustei o valor para um tamanho maior */
+        margin-top:-38px; /*37 fica um uma linha bem pequena (espaçamento)*/
+    }
+
+    #quemsomos img{
+        max-width: 30%;
+        width: auto;
+    }
+
+    .navbar-fundo1 .logocompleta {
+        position: absolute;
+        top: 25%; /*em relação ao topo*/
+        left: 50%;  /*porcentagem da esquerda - utilizar outros tipos*/
+        transform: translate(-50%, -50%);
+        height:200px; /*definindo o tamanho*/
+        width:400px; /*definindo o tamanho*/
+    }
+
+    .quem{
+        max-width: 3px;
+        width: auto;
+    }
+
+    .carousel-item{
+        margin-top: 200px;
+    }
+
+    .arrows{
+        margin-top: 200px;
+    }
+
+    .overlay img{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1290px){
+    .linha1{
+        display: none;
+    }
+
+    .text1{
+        width: 50%;
+        font-size: 120%;
+        margin-left: -50px;
+    }
+
+    .text2{
+        width: 50%;
+        font-size: 120%;
+        margin-left: 30px;
+    }
+
+    .text3{
+        width: 50%;
+        font-size: 120%;
+        margin-left: 120px;
+    }
+
+    .conteudo p{
+        margin-right: 70px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .service1 img, .service2 img {
+        height: 100%; /* Ajusta a altura da imagem */
+        width: 100% /* Ajusta a largura da imagem */
+    }
+}
+
+
+/* begin of responsive line */
+@media (max-width: 900px) {
+    .navbar{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .slides{
+        display: inline;
+        margin-top: 1000px;
+    }
+
+    .navbar-fundo1 img{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .navbar-logo img{
+        width: 90px;
+        height: 50%;
+    }
+
+    .navbar-icons {
+        margin-right: 0px; /* Ajustar para telas menores */
+    }
+
+    .navbar-links a{
+        font-size: 80%;
+    }
+
+    #contatos{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #quemsomos img{
+        max-width: 30%;
+        width: auto;
+    }
+
+    .segmentos p{
+        width: 80%;
+    }
+    
+    .carousel{
+        margin-left: 150px;
+    }
+
+    .arrows{
+        margin-top: -450px;
+    }
+
+    .arrows .st2{
+        margin-top: 100px;
+        margin-bottom: 300px;
+        margin-left: 730px;
+        height: 50%;
+        max-height: 20%;
+    }
+
+    .arrows .st1{
+        display: none;
+    }
+
+    .quem{
+        font-size: 60px;
+        display: none;
+    }
+
+    .somos{
+        font-size: 60px;
+        display: none;
+    }
+
+    .equipe{
+        font-size: 20px;
+        display: none;
+
+    }
+
+    .img1{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .img2{
+        display: none;
+    }
+
+    .img3{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contatos-image img{
+        display: none;
+    }
+
+    .contatos-section{
+        margin-top: 100px;
+        margin-left: 90px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar-links {
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-icons {
+        margin-right: 0;
+    }
+
+    .navbar-icons a{
+        width: 30px;
+        font-size: 10%;
+        margin-right: -40px;
+    }
+
+    .navbar-logo img {
+        margin-top: 10px;
+    }
+
+    .navbar-fundo1 img {
+        height: 800px; /* Ajustei o valor para um tamanho maior */
+        width: 485px;  /* Ajustei o valor para um tamanho maior */
+        margin-top: 38px; /*37 fica um uma linha bem pequena (espaçamento)*/
+      
+    }
+
+   .navbar-fundo1 .logocompleta {
+    position: absolute;
+    top: 35%; /*em relação ao topo*/
+    left: 50%;  /*porcentagem da esquerda - utilizar outros tipos*/
+    transform: translate(-50%, -50%);
+    height: 200px; /*definindo o tamanho*/
+    width: 400px; /*definindo o tamanho*/
+    }
+}
+
+
+
+/* Responsividade para telas maiores que 1920px */
+@media (min-width: 1920px) {
+    .servico, .objetivo, .segmentos {
+        width: calc(30% - 30px); /* Ajusta a largura e o espaçamento */
+        margin: 0 15px 60px; /* Ajuste do espaçamento */
+    }
+}
+
+
+
+/* Responsividade para telas entre 1366px e 1920px */
+@media (max-width: 1920px) and (min-width: 1366px) {
+    .servico, .objetivo, .segmentos {
+        width: calc(30% - 20px); /* Ajusta a largura e o espaçamento */
+    }
+}
+
+
+/* Responsividade para telas menores que 1366px */
+@media (max-width: 1366px) {
+    .servico, .objetivo, .segmentos {
+        width: calc(45% - 20px); /* Ajusta a largura para telas menores */
+        margin: 0 10px 30px; /* Ajusta o espaçamento entre as divs */
+    }
+}
+
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    .navbar{
+        position: fixed;
+        height: 130px;
+    }
+    
+    .navbar-logo img{
+        width: 70px;
+        height: 90px;
+    }
+
+    .navbar-links{
+        margin-left: -15%;
+    }
+
+    .navbar-icons {
+        margin-right: 10%;
+        width: 10%;
+    }
+
+    .navbar-icons img{
+        font-size: 20%;
+    }
+
+    .img2{
+        flex-direction: row;
+    }
+
+    .footer-content, .linha3, .linha4 {
+        height: 40%;
+        width: 40%;
+        justify-items: center;
+    }
+
+    .servico, .objetivo, .segmentos {
+        width: calc(90% - 20px); /* Ajusta a largura para telas muito pequenas */
+        margin: 0 0 30px; /* Ajusta o espaçamento entre as divs */
+    }
+
+    .footer-section {
+        margin-left: -200px;
+    }
+}
+
+
+/* Responsividade para telas menores que 1920px */
+@media (max-width: 1920px) {
+    .container h1 {
+        font-size: 30px; /* Ajusta o tamanho do título */
+        margin-left: 10px; /* Ajuste da posição horizontal */
+    }
+
+    .service1, .service2 {
+        width: 450px; /* Ajusta a largura do contêiner */
+        height: 500px; /* Ajusta a altura do contêiner */
+    }
+
+    .service1 img, .service2 img {
+        height: 300px; /* Ajusta a altura da imagem */
+        width: 500px; /* Ajusta a largura da imagem */
+    }
+}
+
+/* Responsividade para telas menores que 1366px */
+@media (max-width: 1366px) {
+    .container {
+        padding: 40px 2.5%; /* Ajusta o padding interno */
+        margin-left: 10px; /* Ajuste da posição horizontal */
+        margin-top: -20px; /* Ajusta a margem superior */
+    }
+
+    .container h1 {
+        font-size: 28px; /* Ajusta o tamanho do título */
+        margin-left: 5px; /* Ajuste da posição horizontal */
+    }
+
+    .services {
+        gap: 30px; /* Ajusta o espaçamento entre os contêineres */
+    }
+
+    .service1, .service2 {
+        width: 400px; /* Ajusta a largura do contêiner */
+        height: 450px; /* Ajusta a altura do contêiner */
+    }
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 900px) {
+    .container {
+        padding: 20px 5%; /* Ajusta o padding interno */
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-top: 0; /* Remove a margem superior */
+    }
+
+    .container h1 {
+        font-size: 24px; /* Ajusta o tamanho do título */
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+
+    .services {
+        flex-direction: column; /* Organiza os serviços em coluna */
+        gap: 20px; /* Ajusta o espaçamento entre os contêineres */
+    }
+
+    .service1, .service2 {
+        width: 100%; /* Ajusta a largura do contêiner para ocupar toda a largura disponível */
+        height: auto; /* Ajusta a altura do contêiner */
+    }
+
+    .service1 img, .service2 img {
+        height: 300px; /* Ajusta a altura da imagem */
+        width: 80%; /* Ajusta a largura da imagem para ocupar toda a largura disponível */
+    }
+
+    .service1 p, .service2 p{
+        width: 80%;
+    }
+
+    .conteudo{
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        box-shadow: 0 7px 8px rgba(114, 103, 103, 0.893);
+        height: 250px;  /*tamanho da div*/
+        width: 70%;
+        padding: 40px;
+        margin-left: 90px;
+    }
+    
+    .conteudo button{
+        width: 80%;
+    }
+
+    .overlay {
+        height: 500px;/*tamanho da imagem de fundo */
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: 20px 3.5%;
+        box-sizing: border-box;
+        position: relative; /* Adiciona posição relativa para posicionar a imagem de fundo */
+    }
+    
+    .background-image {
+        height: 450px;
+        background-size: cover;
+        position: absolute; /* Posiciona a imagem de fundo absolutamente dentro da div */
+        top: 0;
+        left: 0;
+        z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+    }
+    
+    .conteudo h2{
+        font-size: 150%; /* Define o tamanho da fonte como 24 pixels */
+        font-weight: bold;
+        color: #fff5f5;
+        font-family: 'Gilroy-Bold';
+        margin-top: 15px;
+    }
+    
+    h2:hover{
+        color: #ff8a46;
+    }
+    
+    .conteudo p{
+        font-size: 90%;
+        color: #ffffff;
+        font-family: 'Gilroy-Medium';
+        text-align: justify;
+        text-align-last: justify;
+        line-height: 1.7;
+        hyphens: auto;
+       
+    }
+    
+    .button {
+        background-color:#FF914D; /* Define a cor de fundo do botão */
+        color: #000;
+        border: none; /* Remove qualquer borda padrão do botão */
+        font-weight: bold;
+        padding: 6px 50px;
+        cursor: pointer; /* Define o cursor ao passar sobre o botão */
+        font-size: 100%;
+        text-decoration: none; /* Remove qualquer sublinhado do texto do botão */
+        transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança da cor de fundo */
+        font-family: 'Gilroy-Bold';
+        width: 100%;
+        margin-top: 5%;
+        /*
+        height:100px;
+        width:500px;*/
+    }
+    
+    .button:hover {
+        background-color: #ff4500;
+    }
+
+    .linha1{
+        display: none;
+    }
+
+    .slides{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        display: wrap;
+        margin-top: -500px;
+    }
+
+    .contatos-form {
+        width: 70%;
+    }
+
+    .contatos-form #phone{
+        max-width: 60%;
+    }
+}
+
+
+
+/* Estilos para telas de até 600px de largura - menor tamanho*/
+@media (max-width: 1366px) {
+
+    .contatos-form {
+        max-width: 65%;
+        max-height: 20%;
+        margin-left: 70px;
+        background: #000000;
+        padding: 20px;
+        box-shadow: 0 0 20px #ff850b;
+        border-radius: 8px;
+        border-color: #af0909;
+    }
+
+    form input#nome {
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;
+        height: 20px;
+        width: 45%;
+        margin-left: 0%;
+        font-family: 'Gilroy-Medium';
+    }
+    
+    /*Formatando o campo telefone*/
+    form input#phone {
+        display: flex;
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;
+        height: 20px;
+        width: 46%;
+        margin-left: 50%;
+        margin-top:-52px;
+        font-family: 'Gilroy-Medium';
+    }
+    
+    /*Formatando o campo Email*/
+    form input#email {
+        border-color: #ff8400;
+        height: 20px; /*do mesmo tamanho que os demais elementos*/
+        width: 96%; /*alinhado */
+        box-shadow: 0 0 10px #ff850b;
+        font-family: 'Gilroy-Medium';
+        margin-left: 0%; /*alinhado*/
+    }
+    
+    .contatos-form button {
+        font-size: 20px;
+        height: 50px;
+        width: 150px;
+        margin-right: 500px;
+    }
+    
+    .contatos-form input, .contatos-form textarea {
+        width: 96%;
+        margin-left: 0%;
+    }
+
+
+    .titulo1{
+        font-size: 50px;
+        align-items: center;
+    }
+
+    .titulo2{  
+        font-size: 20px;  
+        position: center;
+        }
+
+    .p1 {
+        font-size: 18px; /* tamanho reduzido */
+        margin-left: 5%;
+        margin-top: 350px; /* ajustado para posicionar abaixo dos títulos */
+        position: center;
+    }
+
+    .p2 {
+        font-size: 1.25rem; /* tamanho reduzido */
+        width: 90%; /* largura ajustada */
+        margin-left: 3%; /* centraliza o texto */
+        margin-top: 0px; /* ajuste para posicionar logo abaixo de .p1 */
+    }
+    .img1{
+        height:800px; /* Ajustei o valor para um tamanho maior */
+        width: 1366px;  /* Ajustei o valor para um tamanho maior */
+        margin-top:-38px; /*37 fica um uma linha bem pequena (espaçamento)*/
+    }
+
+    
+}
+
+/* Estilos para telas de até 600px de largura - menor tamanho*/
+@media (max-width: 600px) {
+
+    .titulo1{
+        font-size: 50px;
+        position: relative;
+        width: 30%;
+    }
+
+    .titulo2{  
+        font-size: 20px;  
+        }
+
+    .p1 {
+        font-size: 18px; /* tamanho reduzido */
+        margin-left: 5%;
+        margin-top: 350px; /* ajustado para posicionar abaixo dos títulos */
+    }
+
+    .p2 {
+        font-size: 1.25rem; /* tamanho reduzido */
+        width: 90%; /* largura ajustada */
+        margin-left: 3%; /* centraliza o texto */
+        margin-top: 0px; /* ajuste para posicionar logo abaixo de .p1 */
+    }
+    .img1{
+        height:800px; /* Ajustei o valor para um tamanho maior */
+        width: 485px;  /* Ajustei o valor para um tamanho maior */
+        margin-top:-38px; /*37 fica um uma linha bem pequena (espaçamento)*/
+    }
+
+    .service1 img, .service2 img{
+        width: 400px;
+        margin-right: 40px;
+    }
+
+    .service1 p, .service2 p{
+        width: 70%;
+        margin-left: -10%;
+    }
+
+    .contatos-form #phone{
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contatos-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        margin-top: 210px;
+       
+    }
+    .contatos-image img {
+        background-color: #000000;
+        border-radius:10px;
+        margin-left:70px;
+        margin-top:55px;
+    }
+
+    .contatos-form {
+        width: 80%;
+        background: #000000;
+        padding: 20px;
+        box-shadow: 0 0 20px #ff850b;
+        border-radius: 8px;
+        border-color: #af0909;
+        margin-left: 4%;
+    }
+    
+    .contatos-form h2 {
+        color: #ff7f00;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size:40px;
+        font-family: 'Gilroy-Bold';
+    }
+    
+    .contatos-form p {
+        color: #ffffff;
+        margin-bottom: 20px;
+        font-family:'Gilroy-Bold';
+        font-size:19px;
+        text-align: center;
+        margin-top:-5px;
+    }
+    
+    .contatos-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contatos-form input, .contatos-form textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #000000;
+        /*border-radius: 5px -- para arredondar a borda se for preciso*/
+        font-family:'Gilroy-Medium';
+        box-shadow: 0 2px 5px rgba(255, 87, 51, 0.5); /* Sombra específica para o campo Nome */
+        height:50px; /*do mesmo tamanho que os demais elementos*/
+        width:335px; /*ajustado */
+        margin-left:4%; /*alinhado, foi preciso alterar*/
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;  
+    }
+    
+    /*Formatando o campo nome*/
+    
+    form input#nome {
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;
+        height:10px;
+        width:150px;
+        margin-left:4%;
+        font-family: 'Gilroy-Medium';
+    }
+    
+    /*Formatando o campo telefone*/
+    form input#phone {
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;
+        height:10px;
+        width:150px;
+        margin-left:200px;
+        margin-top:-42px;
+        font-family: 'Gilroy-Medium';
+    }
+    
+    /*Formatando o campo Email*/
+    form input#email {
+        border-color: #ff8400;
+        height:10px;
+        width:335px;
+        box-shadow: 0 0 10px #ff850b;
+        font-family: 'Gilroy-Medium';
+        margin-left:4%; /*alinhado*/
+    }
+    
+    .contatos-form button {
+        padding: 10px;
+        border: none;
+        background-color: #ff7f00; /*se for preciso mudar a cor do botão */
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+        height:50px;
+        width:150px;
+        margin-left:120px;
+        border-color: #ff8400;
+        font-family: 'Gilroy-Medium';
+      
+    }
+    
+    /*Para ficar mais escuro quando passar o mouse*/
+    .contatos-form button:hover {
+        background-color: #e66f00;
+        box-shadow: 0 0 70px #ffb7a7;
+        
+    }
+}
+
+/* RESPONSIVIDADE PARA TELA DO CELULAR */
+@media (max-width: 768px) { 
+    .navbar {
+        align-items: flex-start; /* Alinha os itens ao centro verticalmente */
+        gap: 1px;
+    }
+
+    .navbar-links {
+        flex-direction: column; 
+        align-items: center; 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 2px; /* Define o espaçamento entre os links */
+        justify-content: center;
+        list-style: none;
+    }
+    .navbar-links a {
+        display: block;
+        width: 90%; /* Faz com que o link ocupe a largura total do item */
+        padding: 5px 0; 
+        text-align: center; 
+    }
+    .navbar-icons{
+        display: flex; 
+        flex-direction: column; 
+        flex-wrap: wrap; /* Permite que os ícones mudem de linha se necessário */
+        gap: 1px; /* Define o espaçamento entre os ícones */
+        padding: 1px; 
+        margin-right: 10px; 
+    }
+
+    .navbar-icons img {
+        max-width: 30px; /* Ajuste o tamanho do ícone */
+        max-height: 30px; /* Mantém a proporção do ícone */
+    }
+
+    .navbar-fundo1{
+        margin-top: 150px;
+    }
+
+    .titulo1{
+        display: block;
+        width: 60%; 
+        padding: 5px 0; 
+        text-align: left;
+        margin-left: 20%;
+    }
+
+    .titulo2{
+        margin-left: 10%;
+    }
+
+    .Empresa2{
+        margin-top: -80%;
+        margin-left: 5%;
+    }
+
+    .sobreempresa {
+        flex-wrap: wrap; /* Coloca a seção sobre empresa em coluna */
+        align-items: center;
+        width: 80%;
+        height: 50%;
+    }
+
+    .sobreempresa p{
+        font-size: 20px;
+    }
+
+    .servico, .objetivo, .segmentos {
+        flex: 1 1 100%; /* Cada item ocupa 100% em telas menores */
+    }
+
+    .services {
+        flex-direction: column; /* Coloca os serviços em coluna */
+        align-items: center;
+    }
+
+    .service1, .service2 {
+        flex: 1 1 100%; /* Cada serviço ocupa 100% em telas menores */
+    }
+
+    .service1 img, .service2 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .service1 p, .service2 p{
+        width: 100%;
+    }
+
+    .linha{
+        margin-left: -30px;
+    }
+
+    .carousel {
+        margin-left: -100px;
+        gap: 10px;
+        width: 110%;
+        height: 70%;
+    }
+    
+    .carousel-item {
+        margin-top: 600px;
+        margin-left: 50px;
+        height: 100%;
+        max-height: 300px;
+        width: 10%;
+        max-width: 300px; /* Ajusta a largura máxima em telas menores */
+    }
+
+    .carousel img{
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .carousel-item p{
+        margin-top: 10px;
+        font-size: 10px;        
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .arrows {
+        justify-content: center; /* Reduz o espaço acima em telas menores */
+        width: 30%;
+        margin-top: -300px;
+        margin-left: 400px;
+    }
+
+    .quem{
+        margin-top: 90px;
+        margin-bottom: 30px;
+        margin-left: 150px;
+        align-self: center;
+        font-size: 60px;
+    }
+
+    .somos{
+        margin-top: -50px;
+        margin-left: 135px;
+        font-size: 60px;
+    }
+
+    .equipe{
+        margin-left: 130px;
+        font-size: 20px;
+    }
+
+    .linha1{
+        display: none;
+    }
+    
+    .st1, .st2 {
+        bottom: 10px; /* Traz as setas mais para cima em telas menores */
+    }
+
+    .contatos-section {
+        flex-direction: column; /* Coloca o formulário e a imagem em coluna */
+        align-items: center;
+    }
+
+    .contatos-form {
+        width: 70%; /* Faz o formulário ocupar toda a largura */
+        padding: 10px;
+    }
+
+    form input#nome {
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;
+        height: 20px;
+        width: 43%;
+        margin-left: 0%;
+        font-family: 'Gilroy-Medium';
+    }
+    
+    /*Formatando o campo telefone*/
+    form input#phone {
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;
+        height: 20px;
+        width: 46%;
+        margin-left: 50%;
+        margin-top:-52px;
+        font-family: 'Gilroy-Medium';
+    }
+    
+    /*Formatando o campo Email*/
+    form input#email {
+        border-color: #ff8400;
+        height:20px; /*do mesmo tamanho que os demais elementos*/
+        width: 96%; /*alinhado */
+        box-shadow: 0 0 10px #ff850b;
+        font-family: 'Gilroy-Medium';
+        margin-left: 0%; /*alinhado*/
+    }
+    
+    .contatos-form button {
+        font-size: 20px;
+        height:50px;
+        width:150px;
+        margin-left: 33%;
+    }
+
+    .contatos-form input, .contatos-form textarea {
+        width: 96%;
+        margin-left: 0%;
+    }
+
+    .contatos-image {
+        display: none; /* Esconde a imagem nos dispositivos móveis, se necessário */
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+        align-items: flex-start;
+        width: 100%; 
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between; 
+        margin: 0 auto; 
+        padding: 10px;
+        width: 100%;
+        max-width: 100%; 
+    }
+    
+    .footer-section p {
+        flex: 1; /* Faz as colunas ocuparem o mesmo espaço */
+        text-align: right; 
+        margin: 0px; 
+        padding: 5px;
+        margin-left: -170px;
+        margin-top: 50px;
+    }
+    
+    .footer-section, .sm{
+        width: 100%; /* Mantém o título no topo em toda a largura */
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 250px;
+    }
+
+    .footer-section p{
+        font-size: 15px;
+        margin-left: -400px;
+    }
+    
+    .footer-texto {
+        width: 30%; /* Garante que o texto ocupe toda a largura da tela em dispositivos móveis */
+        text-align: left; /* Alinha o texto à esquerda */
+        padding: 10px;
+    }
+    
+    .footer-texto p {
+        font-size: 10px;
+        margin: 10;
+        text-align: center; /* Alinha o texto à esquerda */
+        margin-left: -200px;
+        margin-top: 100px;
+        margin-right: 60px;
+    }
+
+    .linha{
+        width: 50%;
+    }
+
+    .linha1{
+        flex-direction: row; 
+        align-items: left;
+        margin-left: 20px;
+    }
+
+    .linha3{
+        flex-direction: row; 
+        align-items: left;
+        margin-left: 20px;
+    }
+    .copy {
+        font-size: 15px;
+        display: block;
+        flex-direction: row; /* Faz com que o copyright fique embaixo dos ícones */
+        flex-wrap: wrap;
+        align-items: center; 
+        justify-content: center;
+        width: 100%; 
+        text-align: center; 
+        margin-top: 20px; 
+        z-index: 10;
+    }
+
+    .footer-icones img {
+        width: calc(10% - 1px);
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 600px){
+    .navbar {
+        flex-direction: row; /* Mantém a navbar em coluna em telas menores */
+        align-items: flex-start; /* Alinha os itens ao centro verticalmente */
+        gap: 1px;
+        position: flex;
+    }
+
+    .contatos-form {
+        background: #000000;
+        padding: 20px 45px;
+        box-shadow: 0 0 20px #ff850b;
+        border-radius: 8px;
+        border-color: #af0909;
+        margin-right: 10%;
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+
+    form input#nome {
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;
+        height: 20px;
+        width: 45%;
+        margin-left: -10%;
+        font-family: 'Gilroy-Medium';
+    }
+    
+    /*Formatando o campo telefone*/
+    form input#phone {
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;
+        height: 20px;
+        max-width: 600px;
+        width: 45%;
+        margin-left: 45%;
+        margin-top:-52px;
+        font-family: 'Gilroy-Medium';
+    }
+    
+    /*Formatando o campo Email*/
+    form input#email {
+        border-color: #ff8400;
+        height: 20px; /*do mesmo tamanho que os demais elementos*/
+        width: 115%; /*alinhado */
+        box-shadow: 0 0 10px #ff850b;
+        font-family: 'Gilroy-Medium';
+        margin-left: -10%; /*alinhado*/
+    }
+    
+    .contatos-form button {
+        font-size: 20px;
+        height:50px;
+        width:150px;
+        margin-left: 17%;
+    }
+    
+    .contatos-form input, .contatos-form textarea {
+        width: 115%;
+        margin-left: -10%;
+    }
+
+    .contatos-form h2, p{
+        margin-left: -0%;
+    }
+
+    .navbar-links {
+        flex-direction: column; 
+        align-items: center;
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 2px; /* Define o espaçamento entre os links */
+        justify-content: center;
+        list-style: none; /* retira a listagem(°) de cada linha */
+    }
+    .navbar-links a {
+        display: block;
+        width: 90%; /* Faz com que o link ocupe a largura total do item */
+        padding: 5px 0; /* Ajusta o padding para melhorar a área clicável */
+        text-align: center; /* Garante que o texto fique centralizado */
+    }
+    .navbar-icons{
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        gap: 2px; 
+        padding: 0; /* Remove padding, se necessário */
+        margin-right: 30px; 
+    }
+    .navbar-icons img {
+        width: 14px; /* Ajuste o tamanho do ícone */
+        height: auto; 
+    }
+
+    .img3{
+        margin-bottom: -600px;
+    }
+
+    .carousel-item.active{
+        height: 700px;
+    }
+
+    .carousel {
+        margin-left: -60px;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .carousel-item {
+        margin-top: 100px;
+        height: 100%;
+        max-height: 300px;
+        width: 100%;
+    }
+
+    .carousel img{
+        display: grid;
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .carousel-item p{
+        margin-top: 10px;
+        font-size: 10px;        
+    }
+
+    .description p{
+        font-size: 14px;
+        margin-top: -5px;
+        margin-left: 20px;
+        margin-right: -5px;
+    }
+
+    .Cargo{
+        height: 100px;
+    }
+
+    .arrows {
+        justify-content: center; /* Reduz o espaço acima em telas menores */
+        width: 30%;
+        margin-top: -300px;
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-icons .icon img {
+        width: 20px; /* Ajusta o tamanho dos ícones em telas pequenas */
+    }
+
+    .navbar {
+        flex-direction: row; /* Mantém a navbar em coluna em telas menores */
+        align-items: flex-start; /* Alinha os itens ao centro verticalmente */
+        gap: 1px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .navbar-fundo1 img{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .navbar-links {
+        flex-direction: column; 
+        align-items: center; 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 2px; 
+        justify-content: center;
+        list-style: none;
+    }
+    .navbar-links a {
+        display: block;
+        width: 90%; 
+        padding: 5px 0;
+        text-align: center; 
+    }
+    .navbar-icons{
+        display: flex; 
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        gap: 2px; 
+        padding: 0; 
+        margin-right: 10; 
+    }
+    .navbar-icons img {
+        width: 14px; 
+        height: auto; 
+    }
+
+    h1 {
+        font-size: 1.5em; 
+    }
+
+    h2 {
+        font-size: 1.2em; /* Reduz o tamanho do subtítulo */
+    }
+
+    .conteudo{
+        margin-left: 25px;
+    }
+
+    .Empresa2 .p1{
+        margin-top: 380px;
+    }
+
+    .carousel{
+        margin-left: 1px;
+        display: inline;
+        margin-top: 80px;
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+        padding: 5px;
+        display: table;
+    }
+
+    .carousel img{
+        margin-left: -130px;
+        width: 50%;
+        height: 60%;
+        display: inline;
+    }
+
+    .carousel-item.active{
+        margin-top: 50px;
+        margin-left: -5px;
+        width: 70%;
+        max-width: 50%;
+        float: left;
+    }
+
+    .carousel-item.active img{
+        margin-left: 20px;
+        width: 80%;
+        height: 80%;
+    }
+
+    .carousel-item.active .description{
+        width: 100%;
+        max-width: 100%;
+        margin-left: 50px;
+    }
+
+    .carousel p{
+        width: 50%;
+        margin-left: 5px;
+    }
+
+    .arrows{
+        margin-top: -140px;
+        margin-bottom: -100px;
+    }
+
+    .arrows .st2{
+        margin-left: -100px;
+        margin-top: 200px;
+    }
+
+    .contatos-form{
+        margin-left: -50px;
+        margin-top: 100px;
+        padding: 50px 80px;
+    }
+
+    .contatos-form #nome{
+        width: 60%;
+    }
+
+    .contatos-form #phone{
+        width: 42%;
+        margin-left: 144px;
+    }
+
+    .copy{
+        margin-left: -0px;
+    }
+
+    .contatos-section{
+        margin-top: -200px;
+    }
+
+    .footer-section{
+        margin-left: 400px;
+        width: 50%;
+        max-width: 5%;
+    }
+
+    .footer-section p{
+        font-size: 10px;
+    }
+
+    .sm{
+        width: 100px;
+    }
+}
+
+@media (max-width: 380px){
+    .carousel{
+        margin-top: 20px;
+    }
+
+    .arrows{
+        margin-left: 290px;
+        margin-top: -140px;
+    }
+
+    .contatos-form{
+        margin-left: -50px;
+        width: 70%;
+        height: 70%;
+    }
+
+    .contatos-form #phone{
+        width: 41%;
+        margin-left: 145px;
+    }
+
+    .sm{
+        margin-left: 400px;
+    }
+
+    .footer-texto{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-section {
+        align-items: center;
+        margin-top: 300px;
+    }
+
+    .footer-section .text1{
+        margin-left: -380px;
+        width: 40%;
+        margin-right: -100px;
+    }
+
+    .footer-section .text2{
+        margin-left: -120px;
+        width: 80%;
+        margin-right: 190px;
+    }
+
+    .footer-section .text3{
+        margin-right: 40px;
+    }
+
+    .footer-section .sm{
+        margin-left: -230px;
+        font-size: 30px;
+        margin-top: 350px;
+    }
+
+    .footer-section p {
+        width: 2%; /* Garante que cada coluna ocupe 100% da largura */
+    }
+
+    .footer-texto{
+        margin-left: 270px;
+        margin-top: -100px;
+    }
+
+    .footer-icones img{
+        width: 10%;
+        max-width: 30%;
+    }
+
+    .sm {
+        width: 15%;
+        margin-left: 100px;
+        margin-top: 300px;
+    }
+
+    .button {
+        padding: 5%;
+        cursor: pointer; /* Define o cursor ao passar sobre o botão */
+        font-size: 80%;
+        text-decoration: none; /* Remove qualquer sublinhado do texto do botão */
+        transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança da cor de fundo */
+        font-family: 'Gilroy-Bold';
+        width: 80%;
+        margin-top: 1%;
+        /*
+        height:100px;
+        width:500px;*/
+    }
+
+    .copy{
+        margin-bottom: 100px;
+    }
+}
